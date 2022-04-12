@@ -9,5 +9,11 @@ const databaseMachines = process.env.DATABASE;
 
 
 const getFromDatabase = async(body)=>{
+    const query = await axios.get(databaseMachines)
+    console.log(query.data)
+    return query.data
+}
 
+module.exports={
+    getFromDatabase:getFromDatabase
 }

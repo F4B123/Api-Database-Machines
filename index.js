@@ -20,7 +20,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 //middleware for parsing
-app.use(bodyParser.json({limit:"100mb",}))
+app.use(bodyParser.json({limit:"1000mb",}))
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //routes
